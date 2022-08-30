@@ -365,7 +365,7 @@ function add_home_terminal_shortcode() {
 	<div class="home-terminal__code-block">
 
 		<div class="home-terminal__download">
-			<a href="https://github.com/cncf/cncf.io/tree/main/web/wp-content/themes/cncf-twenty-two/source/terminal/"
+			<a href="https://github.com/cncf/cncf.io/tree/main/web/wp-content/themes/profian-twenty-two/source/terminal/"
 				class="box-link" title="Download CNCF Theme for Terminal"></a>
 
 			<img class="home-terminal__download-image" width="35" height="23" alt=""
