@@ -1,0 +1,30 @@
+// Backend Alignment Only.
+
+// aligns content in groups a little better
+.wp-block-group,
+.wp-block-group.has-background {
+	padding: 1.25rem 2rem;
+	> .wp-block-group {
+		padding: 1rem;
+	}
+}
+
+// added to stop known WP issue where buttons lose margin in columns.
+// https://github.com/WordPress/gutenberg/issues/28549
+.wp-block-columns .wp-block-buttons .wp-block-button {
+	margin-right: 0.5em;
+}
+
+// Constrict content in Editor.
+.wp-block[data-align='full'] > .wp-block-group {
+	> * {
+		max-width: $content-width;
+		margin-left: auto;
+		margin-right: auto;
+	}
+}
+
+// Give columns some extra padding.
+.wp-block-columns {
+	padding-top: 1rem;
+}
