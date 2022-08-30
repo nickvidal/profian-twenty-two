@@ -54,7 +54,7 @@ We protect your data and applications in a way no one else can.</h2>
 			<ul class="home-hero__metric_wrapper">
 				<li class="show-over-800"><a href="/about/who-we-are/"
 						class="wp-block-button__link"
-						title="Learn more about CNCF">Learn more</a>
+						title="Learn more about Profian">Learn more</a>
 			</ul>
 		</div>
 	</div>

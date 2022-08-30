@@ -106,13 +106,40 @@ endif;
 					<div class="sub-menu">
 						<div class="col-container">
 							<div class="col1">
+								<ul class="menu">
+									<li class="lf-menu-title">Latest Blog Posts
+									</li>
+								</ul>
+
 								<?php
-								wp_nav_menu(
-									array(
-										'theme_location' => 'blog_01',
-										'container'      => false,
-									)
+								$args  = array(
+									'post_type'           => 'post',
+									'post_status'         => array( 'publish' ),
+									'posts_per_page'      => 3,
+									'orderby'             => 'date',
+									'order'               => 'DESC',
+									'ignore_sticky_posts' => false,
+									'category_name'       => 'blog',
 								);
+								$query = new WP_Query( $args );
+
+								if ( $query->have_posts() ) :
+									?>
+								<div class="columns-one">
+									<?php
+
+									while ( $query->have_posts() ) {
+										$query->the_post();
+
+										get_template_part( 'components/main-menu-item' );
+									}
+
+									?>
+								</div>
+
+									<?php
+								endif;
+								wp_reset_postdata();
 								?>
 							</div>
 							<div class="col2">
