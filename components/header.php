@@ -23,7 +23,7 @@ endif;
 
 		<div class="logo">
 			<a href="/" title="<?php echo bloginfo( 'name' ); ?>">
-				<img loading="eager" src="http://localhost/wp-content/uploads/2022/08/Profian_logo-colour-positive.svg"
+				<img loading="eager" src="<?php echo esc_url( wp_get_attachment_url( "508" ) ); ?>"
 					style="height:40px;"
 					alt="<?php echo bloginfo( 'name' ); ?>">
 			</a>
@@ -94,7 +94,7 @@ endif;
 							</div>
 							<div class="col3">
 								<ul id="menu-resources-3" class="menu"><li class="menu-item menu-item-type-custom menu-item-object-custom lf-menu-title">White Paper</li>
-								<li class="menu-item menu-item-type-custom menu-item-object-custom"><a href="https://profian.com/whitepaper"><img src="http://localhost/wp-content/uploads/2022/08/profian-whitepaper-intro-confidential-computing.png" style="max-height: 300px; border: solid 1px black"></a></li>
+								<li class="menu-item menu-item-type-custom menu-item-object-custom"><a href="https://profian.com/whitepaper"><img src="<?php echo esc_url( wp_get_attachment_url( "509" ) ); ?>" style="max-height: 300px; border: solid 1px black"></a></li>
 								</ul>
 							</div>
 						</div>
@@ -144,12 +144,12 @@ endif;
 							</div>
 							<div class="col2">
 								<ul id="menu-blog-2" class="menu"><li class="menu-item menu-item-type-custom menu-item-object-custom lf-menu-title">Press Release</li>
-								<li class="menu-item menu-item-type-custom menu-item-object-custom"><a href="https://profian.com/whitepaper"><img src="http://localhost/wp-content/uploads/2022/08/profian-whitepaper-intro-confidential-computing.png" style="max-height: 300px; border: solid 1px black"></a></li>
+								<li class="menu-item menu-item-type-custom menu-item-object-custom"><a href="https://profian.com/press-release"><img src="<?php echo esc_url( wp_get_attachment_url( "541" ) ); ?>" style="max-height: 300px; border: solid 1px black"></a></li>
 								</ul>
 							</div>
 							<div class="col3">
 								<ul id="menu-blog-3" class="menu"><li class="menu-item menu-item-type-custom menu-item-object-custom lf-menu-title">In the News</li>
-								<li class="menu-item menu-item-type-custom menu-item-object-custom"><a href="https://profian.com/news"><img src="http://localhost/wp-content/uploads/2022/08/thenewstack.png" style="max-height: 300px; border: solid 1px black"></a></li>
+								<li class="menu-item menu-item-type-custom menu-item-object-custom"><a href="https://profian.com/news"><img src="<?php echo esc_url( wp_get_attachment_url( "510" ) ); ?>" style="max-height: 300px; border: solid 1px black"></a></li>
 								</ul>
 							</div>
 						</div>
@@ -182,9 +182,9 @@ endif;
 							</div>
 							<div class="col3">
 								<ul id="menu-community-3" class="menu"><li class="menu-item menu-item-type-custom menu-item-object-custom lf-menu-title">Membership</li>
-								<li class="menu-item menu-item-type-custom menu-item-object-custom"><a href="https://confidentialcomputing.io"><img src="http://localhost/wp-content/uploads/2022/08/confidential_computing_consortium-logo-horizontal-color.svg" style="max-width: 300px;"></a></li>
-								<li class="menu-item menu-item-type-custom menu-item-object-custom"><a href="https://cncf.io"><img src="http://localhost/wp-content/uploads/2022/08/cncf-color-bg.svg" style="max-width: 300px; padding-bottom: 15px;"></a></li>
-								<li class="menu-item menu-item-type-custom menu-item-object-custom"><a href="https://bytecodealliance.org"><img src="http://localhost/wp-content/uploads/2022/08/bytecode-alliance-logo.svg" style="max-width: 300px;"></a></li>
+								<li class="menu-item menu-item-type-custom menu-item-object-custom"><a href="https://confidentialcomputing.io"><img src="<?php echo esc_url( wp_get_attachment_url( "507" ) ); ?>" style="max-width: 300px;"></a></li>
+								<li class="menu-item menu-item-type-custom menu-item-object-custom"><a href="https://cncf.io"><img src="<?php echo esc_url( wp_get_attachment_url( "505" ) ); ?>" style="max-width: 300px; padding-bottom: 15px;"></a></li>
+								<li class="menu-item menu-item-type-custom menu-item-object-custom"><a href="https://bytecodealliance.org"><img src="<?php echo esc_url( wp_get_attachment_url( "506" ) ); ?>" style="max-width: 300px;"></a></li>
 								</ul>
 							</div>
 						</div>
