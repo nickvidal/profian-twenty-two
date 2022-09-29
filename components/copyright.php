@@ -25,7 +25,7 @@ $site_options = get_option( 'lf-mu' );
 
 					<a href="<?php echo esc_url( get_permalink( $site_options['accessibility_cta_link'] ) ); ?>"><?php echo esc_html( $site_options['accessibility_cta_text'] ); ?></a><br>
 		<?php endif; ?>
-		<a href="https://profian.com/contact">Submit an issue with this page</a>
+		<a href="https://profian.com/privacy-policy">Privacy Policy</a>
 	</p>
 
 </div>

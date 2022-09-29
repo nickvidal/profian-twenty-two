@@ -39,11 +39,6 @@
 	<body <?php body_class(); ?>>
 		<?php wp_body_open(); ?>
 
-		<?php
-		// Cookie Banner should be first focusable element on a page.
-		get_template_part( 'components/cookie-banner' );
-		// Followed by Skip Link and Accessibility help link if set.
-		?>
 		<a class="skip-link" href="#maincontent">Skip to content</a>
 		<?php
 		$site_options = get_option( 'lf-mu' );

@@ -74,20 +74,12 @@ $site_options = get_option( 'lf-mu' );
 
 		<div class="lf-grid">
 
-			<?php
-			// Only on desktop.
-			if ( isset( $site_options['footer_image_id'] ) && $site_options['footer_image_id'] ) {
-				?>
 			<div class="logo show-over-1000">
 				<a href="/" title="<?php echo bloginfo( 'name' ); ?>">
-					<img src="<?php echo esc_url( wp_get_attachment_url( $site_options['footer_image_id'] ) ); ?>" loading="lazy"
+					<img src="<?php echo esc_url( wp_get_attachment_url( "1064" ) ); ?>" loading="lazy"
 					width="210" height="40" alt="<?php echo bloginfo( 'name' ); ?>">
 				</a>
 			</div>
-
-				<?php
-			}
-			?>
 
 			<?php get_template_part( 'components/social-links' ); ?>
 
@@ -106,7 +98,7 @@ $site_options = get_option( 'lf-mu' );
 		<?php
 		// This needs to be bigger to allow for cookie banner.
 		?>
-		<div style="height:70px" aria-hidden="true" class="wp-block-spacer"></div>
+		<div style="height:120px" aria-hidden="true" class="wp-block-spacer"></div>
 
 	</div>
 </footer>

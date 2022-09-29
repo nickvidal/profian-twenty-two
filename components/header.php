@@ -32,7 +32,7 @@ endif;
 		<nav class="main-menu">
 			<ul class="main-menu__wrapper">
 				<li class="menu-item-has-children"><a
-						href="#"><span>Solution</span></a>
+						href="#"><span>Profian Assure</span></a>
 					<div class="sub-menu">
 						<div class="col-container">
 							<div class="col1">
@@ -94,7 +94,7 @@ endif;
 							</div>
 							<div class="col3">
 								<ul id="menu-resources-3" class="menu"><li class="menu-item menu-item-type-custom menu-item-object-custom lf-menu-title">White Paper</li>
-								<li class="menu-item menu-item-type-custom menu-item-object-custom"><a href="https://profian.com/whitepaper"><img src="<?php echo esc_url( wp_get_attachment_url( "509" ) ); ?>" style="max-height: 300px; border: solid 1px black"></a></li>
+								<li class="menu-item menu-item-type-custom menu-item-object-custom"><a href="/blog/white-paper-introduction-to-confidential-computing"><img src="<?php echo esc_url( wp_get_attachment_url( "509" ) ); ?>" style="max-height: 300px; border: solid 1px black"></a></li>
 								</ul>
 							</div>
 						</div>
@@ -144,12 +144,12 @@ endif;
 							</div>
 							<div class="col2">
 								<ul id="menu-blog-2" class="menu"><li class="menu-item menu-item-type-custom menu-item-object-custom lf-menu-title">Press Release</li>
-								<li class="menu-item menu-item-type-custom menu-item-object-custom"><a href="https://profian.com/press-release"><img src="<?php echo esc_url( wp_get_attachment_url( "541" ) ); ?>" style="max-height: 300px; border: solid 1px black"></a></li>
+								<li class="menu-item menu-item-type-custom menu-item-object-custom"><a href="/blog/confidential-computing-startup-profian-secures-5-million-in-seed-round-in-order-to-make-cloud-computing-more-secure"><img src="<?php echo esc_url( wp_get_attachment_url( "541" ) ); ?>" style="max-height: 300px; border: solid 1px black"></a></li>
 								</ul>
 							</div>
 							<div class="col3">
 								<ul id="menu-blog-3" class="menu"><li class="menu-item menu-item-type-custom menu-item-object-custom lf-menu-title">In the News</li>
-								<li class="menu-item menu-item-type-custom menu-item-object-custom"><a href="https://profian.com/news"><img src="<?php echo esc_url( wp_get_attachment_url( "510" ) ); ?>" style="max-height: 300px; border: solid 1px black"></a></li>
+								<li class="menu-item menu-item-type-custom menu-item-object-custom"><a href="/blog/solving-a-confidential-computing-pain-point-with-webassembly"><img src="<?php echo esc_url( wp_get_attachment_url( "510" ) ); ?>" style="max-height: 300px; border: solid 1px black"></a></li>
 								</ul>
 							</div>
 						</div>
@@ -225,7 +225,6 @@ endif;
 								);
 								?>
 							</div>
-						</div>
 						</div>
 					</div>
 				</li>

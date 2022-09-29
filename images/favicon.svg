@@ -1,1 +1,63 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="-10.24 -10.24 531.98 532.48"><g opacity=".8"><style>path{fill:#000}@media (prefers-color-scheme:light){path{fill:#000}}@media (prefers-color-scheme:dark){path{fill:#fff}}</style><path class="svg" d="M331.999 171.192l-97.6-97.387h107.2V.365h-171.2v73.44l97.6 97.387h64zm-88 170.028h-64l80.8 80.624 16 16.763h-106.4v73.44h171.2v-74.238l-48.8-47.895-48.8-48.694zm195.202-170.028V277.36l-16.88-16.764-80.8-80.623v64.658l48 47.896 48.8 48.693h73.6V171.192h-72.72zM170.4 267.781l-96.8-96.589H0V341.22h72.8V235.052l97.6 97.387v-64.658z" opacity=".8"/><path class="svg" d="M72.8 341.22H0v170.827h170.4v-73.121H72.8V341.22zm366.4.798v96.908h-97.6v73.44H512V341.22h-73.68l.88.798zM0 171.192h73.6l-.8-.798V73.805h97.6V.365H0v170.827zM341.6.366v73.44h97.6v97.386H512V.366H341.6z"/></g></svg>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   viewBox="0 0 300 300"
+   version="1.1"
+   id="svg32"
+   sodipodi:docname="favicon.svg"
+   inkscape:export-filename="../22390a96/apple-touch-icon.png"
+   inkscape:export-xdpi="57.599998"
+   inkscape:export-ydpi="57.599998"
+   inkscape:version="1.2.1 (0f2f062aeb, 2022-09-21, custom)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview34"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     showgrid="false"
+     inkscape:zoom="1.7933333"
+     inkscape:cx="15.613383"
+     inkscape:cy="150.27881"
+     inkscape:window-width="1292"
+     inkscape:window-height="704"
+     inkscape:window-x="266"
+     inkscape:window-y="27"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg32" />
+  <defs
+     id="defs20">
+    <style
+       id="style18">.cls-1{fill:#00ad00;}</style>
+  </defs>
+  <g
+     id="Ebene_2"
+     data-name="Ebene 2">
+    <g
+       id="Layer_1"
+       data-name="Layer 1">
+      <path
+         class="cls-1"
+         d="M64.28,235.72C83.15,274.58,114.51,300,150,300s66.85-25.42,85.72-64.28c-24.3,11.81-53.84,18.74-85.72,18.74S88.58,247.53,64.28,235.72Z"
+         id="path22" />
+      <path
+         class="cls-1"
+         d="M235.72,64.28C216.85,25.42,185.49,0,150,0S83.15,25.42,64.28,64.28C88.58,52.47,118.12,45.54,150,45.54S211.42,52.47,235.72,64.28Z"
+         id="path24" />
+      <path
+         class="cls-1"
+         d="M64.28,64.28C25.42,83.15,0,114.51,0,150s25.42,66.85,64.28,85.72C52.47,211.42,45.54,181.88,45.54,150S52.47,88.58,64.28,64.28Z"
+         id="path26" />
+      <path
+         class="cls-1"
+         d="M300,150c0-35.49-25.42-66.85-64.28-85.72,11.81,24.3,18.74,53.84,18.74,85.72s-6.93,61.42-18.74,85.72C274.58,216.85,300,185.49,300,150Z"
+         id="path28" />
+    </g>
+  </g>
+</svg>

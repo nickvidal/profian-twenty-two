@@ -16,12 +16,12 @@ get_template_part( 'components/home-hero' );
 <article class="container wrap">
 	<?php
 
-	/*if ( have_posts() ) :
+	if ( have_posts() ) :
 		while ( have_posts() ) :
 			the_post();
 			the_content();
 		endwhile;
-	endif;*/
+	endif;
 	?>
 </article>
 <?php
