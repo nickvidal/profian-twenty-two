@@ -22,16 +22,16 @@
 	border: 0; // reset.
 	padding: 0; // reset.
 	margin: 0; // reset.
-	box-shadow: none; // reset.
+	box-shadow: none;
 	cursor: pointer;
 	word-break: break-word;
 	box-sizing: border-box;
-	border-radius: 5px;
+	border-radius: 0;
 	font-family: $font-primary;
 	font-size: 16px;
-	font-weight: 700;
+	font-weight: 600;
 	line-height: 18px;
-	letter-spacing: 0.02em;
+	letter-spacing: 0.025em;
 	text-align: center;
 	text-decoration: none;
 
@@ -40,7 +40,6 @@
 	max-width: 100%;
 	background-color: $link-color;
 	color: $white;
-	text-transform: uppercase;
 	transition: all 0.25s ease-out;
 
 	// 18px line-height + 11px + 11px makes buttons 40px.
@@ -88,7 +87,7 @@
 		.wp-block-button__link {
 			font-size: 14px;
 			line-height: 16px;
-			border-radius: 3px;
+			border-radius: 0;
 			// 16px line-height + 10px makes buttons 36px.
 			padding-top: 10px;
 			padding-bottom: 10px;
