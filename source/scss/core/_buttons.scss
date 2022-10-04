@@ -79,6 +79,22 @@
 	&.has-black-color:hover {
 		color: $white !important;
 	}
+
+	&::after {
+		background-image: url("data:image/svg+xml,%3Csvg role='img' xmlns='http://www.w3.org/2000/svg' width='48px' height='48px' viewBox='0 0 24 24' aria-labelledby='arrowRightIconTitle' stroke='%23ffffff' stroke-width='2' stroke-linecap='square' stroke-linejoin='miter' fill='none' color='%23ffffff'%3E%3Ctitle id='arrowRightIconTitle'%3EArrow Right%3C/title%3E%3Cpath d='M15 18l6-6-6-6'/%3E%3Cpath d='M3 12h17'/%3E%3Cpath stroke-linecap='round' d='M21 12h-1'/%3E%3C/svg%3E");
+		background-position: 50%;
+		background-repeat: no-repeat;
+		background-size: contain;
+		content: "";
+		display: inline-block;
+		line-height: 18px;
+		height: 15px;
+		margin-left: 6px;
+		position: relative;
+		vertical-align: middle;
+		width: 15px;
+		top: -1px;
+	}
 }
 
 // parent container, styles are attached here.

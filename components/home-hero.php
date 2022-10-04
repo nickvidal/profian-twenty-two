@@ -52,7 +52,7 @@ $metrics = LF_Utils::get_homepage_metrics();
 			<ul class="home-hero__metric_wrapper">
 				<li class="show-over-800"><a href="/profian-assure"
 						class="wp-block-button__link"
-						title="Learn more">Learn more</a>
+						title="Learn more">Learn More</a>
 			</ul>
 		</div>
 	</div>
