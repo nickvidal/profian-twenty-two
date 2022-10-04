@@ -342,7 +342,7 @@ function editorJS() {
 
 exports.default    = gulp.series( styles,globalJS,editorJS,watch );
 exports.watch      = gulp.series( styles,globalJS,editorJS,watch );
-exports.detached   = gulp.series( styles,detachedStyles,globalJS,editorJS,watch );
+// exports.detached   = gulp.series( styles,detachedStyles,globalJS,editorJS,watch );
 exports.build      = gulp.series( styles,detachedStyles,globalJS,editorJS );
 exports.production = gulp.series( styles,detachedStyles,globalJS,editorJS );
 exports.prod       = gulp.series( styles,detachedStyles,globalJS,editorJS );
