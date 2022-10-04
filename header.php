@@ -27,6 +27,9 @@
 			href="<?php echo esc_url( get_template_directory_uri() . '/images/apple-touch-icon.png' ); ?>">
 		<link rel="manifest"
 			href="<?php echo esc_url( get_template_directory_uri() . '/images/manifest.webmanifest' ); ?>">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=DM+Mono&family=DM+Sans:ital@0;1&display=swap" rel="stylesheet">
 		<meta name="theme-color" content="#000000">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<style>
