@@ -2,6 +2,22 @@
 	overflow: hidden;
 	position: relative;
 	background-color: $black;
+
+	&::after {
+		background-image: url('/wp-content/themes/profian-twenty-two/images/ribbon-accent-hero.svg');
+		background-repeat: no-repeat;
+		background-size: 100%;
+		bottom: -120px;
+		content: "";
+		display: block;
+		height: 310px;
+		left: 0;
+		opacity: .2;
+		position: absolute;
+		width: 170%;
+		z-index: 4;
+	}
+
 	&__video {
 		width: 100%;
 		height: 100%;
@@ -10,6 +26,7 @@
 		z-index: 1;
 		top: 0;
 		left: 0;
+		filter: saturate(0);
 	}
 	&__poster,
 	&__overlay {
@@ -25,6 +42,8 @@
 		visibility: visible;
 		opacity: 1;
 		transition: all 0.5s ease-out;
+		filter: saturate(0);
+
 		&.video-has-loaded {
 			transition: all 0.45s ease-out;
 			visibility: hidden;
@@ -35,14 +54,15 @@
 		z-index: 3;
 		background-color: rgba($black, 1);
 		transition: all 0.5s ease-out;
+
 		&.poster-has-loaded {
 			transition: all 1s ease-out;
-			background-color: rgba($black, 0.55);
+			background: radial-gradient(circle at left, rgb(22 56 22 / 76%) 29%, rgb(9 15 9 / 74%) 100%);
 		}
 	}
 	&__content {
 		position: relative;
-		z-index: 4;
+		z-index: 5;
 		color: $white;
 	}
 	&__title {
@@ -52,7 +72,6 @@
 			margin-top: 0;
 			padding-top: max(60px, calc(100vh - 136px - 80px - 510px)); // Min space.
 		}
-		font-weight: 800;
 		font-size: 38px;
 		line-height: 135%;
 		@media (min-width: 412px) {
@@ -66,7 +85,18 @@
 			font-size: 78px;
 		}
 		span {
-			font-weight: 400;
+			display: inline-block;
+    		position: relative;
+		}
+		span::before {
+			content: '';
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			width: 100%;
+			height: 3px;
+			display: inline-block;
+			background: linear-gradient(90deg, rgba(0,173,0,1) 0%, rgba(255,255,255,1) 100%);
 		}
 	}
 	&__description {
@@ -80,12 +110,9 @@
 		font-weight: 400;
 		max-width: 714px;
 		line-height: 160%;
-		font-size: 14px;
+		font-size: 16px;
 		@media (min-width: 412px) {
-			font-size: 16px;
-		}
-		strong {
-			font-weight: 800;
+			font-size: 20px;
 		}
 	}
 	&__metric_wrapper {

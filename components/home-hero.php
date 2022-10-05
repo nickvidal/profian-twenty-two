@@ -44,13 +44,13 @@ $metrics = LF_Utils::get_homepage_metrics();
 	<div class="home-hero__content">
 		<div class="container wrap">
 
-			<h1 class="home-hero__title">Cloud security<br />for data in use
+			<h1 class="home-hero__title">Cloud Security<br />for <span>Data in Use</span>
 			</h1>
 
-			<h2 class="home-hero__description">Run sensitive workloads in the cloud with <strong>Confidential Computing</strong></h2>
+			<h2 class="home-hero__description">Run sensitive workloads in the cloud with <strong>Confidential Computing.</strong></h2>
 
 			<ul class="home-hero__metric_wrapper">
-				<li class="show-over-800"><a href="/profian-assure"
+				<li><a href="/profian-assure"
 						class="wp-block-button__link"
 						title="Learn more">Learn More</a>
 			</ul>
