@@ -28,12 +28,12 @@ select {
 // Selector is not great and may interfere with other forms.
 .hs-form-iframe {
 	max-width: 800px;
-	margin-top: 40px;
-	margin-bottom: 40px;
-	@media (min-width: 1200px) {
-		margin-top: 80px;
-		margin-bottom: 80px;
-	}
+	margin-top: 10px;
+	margin-bottom: 10px;
+	// @media (min-width: 1200px) {
+	// 	margin-top: 80px;
+	// 	margin-bottom: 80px;
+	// }
 }
 
 // Remove small X in search bar in Chrome.

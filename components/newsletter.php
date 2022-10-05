@@ -10,8 +10,7 @@
 ?>
 <div class="newsletter" id="newsletter">
 
-	<p
-		class="newsletter__title is-style-max-width-800"><strong>Subscribe</strong> to our newsletter</p>
+	<p class="newsletter__title is-style-max-width-800">Subscribe to our newsletter</p>
 
 	<script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2.js?pre=1"></script>
 	<script>
@@ -21,8 +20,5 @@
 		formId: "bf509931-cfa2-421b-b3bf-a4c984d641fc"
 	});
 	</script>
-
-	<div style="height:60px" aria-hidden="true"
-		class="wp-block-spacer is-style-30-60"></div>
 
 </div>
