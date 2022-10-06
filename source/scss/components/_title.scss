@@ -10,15 +10,19 @@
 // Page Title Style
 .is-style-page-title {
 	font-weight: 700;
-	line-height: 140%;
-	font-size: 28px;
+	line-height: 130%;
+	font-size: 30px;
+	text-align: center;
+	@media (min-width: 1200px) {
+		font-size: 50px;
+	}
 }
 
 // Blog Post Style
 .is-style-post-title {
-	font-weight: 400;
+	font-weight: 700;
 	max-width: 800px;
-	line-height: 150%;
+	line-height: 130%;
 	font-size: 30px;
 	@media (min-width: 1200px) {
 		font-size: 50px;
