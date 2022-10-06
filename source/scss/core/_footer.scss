@@ -22,14 +22,12 @@
 	nav {
 		display: none;
 		@media (min-width: 1000px) {
-			border-top: 1px solid #fff;
 			display: grid;
 			letter-spacing: 0.02em;
 			grid-column-gap: 1.2%;
 			grid-row-gap: $grid-row-gap;
 			grid-template-columns: repeat(5, minmax(0, 1fr));
-			margin-top: 58px;
-			padding-top: 35px;
+			margin-top: 56px;
 
 			a {
 				font-weight: 400 !important;
