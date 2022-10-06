@@ -158,3 +158,20 @@ function lf_update_styles_with_filemtime( $styles ) {
 	$styles->default_version = filemtime( get_template_directory() . '/style.css' );
 }
 add_action( 'wp_default_styles', 'lf_update_styles_with_filemtime' );
+
+/**
+ * Add category class to single posts
+ * 
+ */ 
+add_filter('body_class','add_category_to_single');
+  function add_category_to_single($classes) {
+    if (is_single() ) {
+      global $post;
+      foreach((get_the_category($post->ID)) as $category) {
+        // add category slug to the $classes array
+        $classes[] =  'single-' . $category->category_nicename;
+      }
+    }
+    // return the $classes array
+    return $classes;
+  }

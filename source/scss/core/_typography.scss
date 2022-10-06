@@ -174,11 +174,6 @@ h3,
 
 // blog and spotlight posts content.
 .post-content {
-	@media (min-width: 900px) {
-		*:not(.is-style-full-width) {
-			max-width: 900px;
-		}
-	}
 	font-size: 14px;
 	@media (min-width: 390px) {
 		font-size: 15px;

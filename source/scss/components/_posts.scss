@@ -211,3 +211,17 @@
 		line-height: 170%;
 	}
 }
+
+
+// Blog Specific
+// Todo: Move to specific scss file?
+@media (min-width: 900px) {
+	.single-blog .post-content :not(.is-style-full-width) {
+		max-width: 900px;
+	}
+}
+
+// White Paper Specific
+.white-paper__cover img {
+	border: 1px solid $black;
+}

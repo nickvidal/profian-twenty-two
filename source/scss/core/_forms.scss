@@ -1,6 +1,9 @@
 input[type='text'],
 input[type='email'],
-input[type='search'] {
+input[type='search'],
+input[type='tel'],
+select,
+textarea {
 	height: 50px;
 	padding-left: 12px;
 	width: 100%;

@@ -58,15 +58,33 @@
 	font-weight: 700;
 	font-size: 9px;
 	line-height: 9px;
-	text-transform: uppercase;
 	display: inline-block;
 	color: $gray-700;
-	letter-spacing: 0.15em;
 	&.has-larger-style {
 		font-size: 12px;
 		line-height: 12px;
 	}
 }
+
+.parent-link {
+	&::before {
+		background-image: url("data:image/svg+xml,%3Csvg role='img' xmlns='http://www.w3.org/2000/svg' width='48px' height='48px' viewBox='0 0 24 24' aria-labelledby='arrowRightIconTitle' stroke='%23747474' stroke-width='2' stroke-linecap='square' stroke-linejoin='miter' fill='none' color='%23747474'%3E%3Ctitle id='arrowRightIconTitle'%3EArrow Right%3C/title%3E%3Cpath d='M15 18l6-6-6-6'/%3E%3Cpath d='M3 12h17'/%3E%3Cpath stroke-linecap='round' d='M21 12h-1'/%3E%3C/svg%3E");
+		background-position: 50%;
+		background-repeat: no-repeat;
+		background-size: contain;
+		content: "";
+		display: inline-block;
+		line-height: 18px;
+		height: 15px;
+		margin-right: 6px;
+		position: relative;
+		vertical-align: middle;
+		width: 15px;
+		top: -1px;
+		transform: rotate(180deg);
+	}
+}
+
 
 .parent-link-align {
 	display: flex;
