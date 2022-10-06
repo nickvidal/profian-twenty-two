@@ -12,6 +12,7 @@ a {
 	font-weight: 700;
 	color: $primary-color;
 	text-decoration: none;
+	transition: all .2s ease-out;
 	&:hover {
 		text-decoration: underline;
 	}
