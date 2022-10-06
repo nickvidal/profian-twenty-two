@@ -71,16 +71,17 @@ $site_options = get_option( 'lf-mu' );
 			class="wp-block-spacer is-style-40-80"></div>
 
 		<div class="lf-grid">
-
-			<div class="logo show-over-1000">
-				<a href="/" title="<?php echo bloginfo( 'name' ); ?>">
-					<img src="<?php echo esc_url( wp_get_attachment_url( "1064" ) ); ?>" loading="lazy"
-					width="210" height="40" alt="<?php echo bloginfo( 'name' ); ?>">
-				</a>
+			<div class="span7">		
+				<div class="logo show-over-1000">
+					<a href="/" title="<?php echo bloginfo( 'name' ); ?>">
+						<img src="<?php echo esc_url( wp_get_attachment_url( "1064" ) ); ?>" loading="lazy"
+						width="210" height="40" alt="<?php echo bloginfo( 'name' ); ?>">
+					</a>
+				</div>
 			</div>
-
-			<?php get_template_part( 'components/social-links' ); ?>
-
+			<div class="span5">		
+				<?php get_template_part( 'components/social-links' ); ?>
+			</div>
 		</div>
 
 		<div style="height:20px" aria-hidden="true"
