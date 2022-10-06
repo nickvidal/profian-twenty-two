@@ -126,6 +126,14 @@ body {
 	width: 1px;
 }
 
+@mixin sr-text {
+	position: absolute !important;
+	clip: rect(1px, 1px, 1px, 1px);
+	overflow: hidden;
+	height: 1px;
+	width: 1px;
+}
+
 .skip-link {
 	border: 0;
 	clip: rect(1px, 1px, 1px, 1px);

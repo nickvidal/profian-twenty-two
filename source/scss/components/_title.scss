@@ -10,12 +10,8 @@
 // Page Title Style
 .is-style-page-title {
 	font-weight: 700;
-	text-transform: uppercase;
 	line-height: 140%;
 	font-size: 28px;
-	@media (min-width: 1000px) {
-		font-size: 40px;
-	}
 }
 
 // Blog Post Style
