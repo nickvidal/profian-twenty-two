@@ -93,7 +93,9 @@ else :
 				// display large featured image.
 				Lf_Utils::display_responsive_images( get_post_thumbnail_id(), 'newsroom-776', '776px', 'post-archive__image', 'lazy', get_the_title() );
 
-			} elseif ( has_post_thumbnail() ) {
+			} elseif (has_post_thumbnail() && in_category( 'white-papers' )) {
+				the_post_thumbnail('medium', array('class' => 'post-archive__image-wp'));
+			} elseif ( has_post_thumbnail() && !in_category( 'white-papers' )) {
 				// display smaller news image.
 				Lf_Utils::display_responsive_images( get_post_thumbnail_id(), 'newsroom-388', '388px', 'post-archive__image', 'lazy', get_the_title() );
 
