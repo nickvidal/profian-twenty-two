@@ -9,9 +9,9 @@ body {
 	height: auto;
 	background-color: $gray-050;
 	font-family: $font-primary;
-	font-size: 0.875em; // 14px.
+	font-size: 1em; // 16px.
 	@media (min-width: 768px) {
-		font-size: 1em; // 16px.
+		font-size: 1.125em; // 18px.
 	}
 	color: $body-text-color;
 	font-weight: 400;

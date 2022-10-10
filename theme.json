@@ -33,7 +33,7 @@
                 },
                 {
                     "slug": "normal",
-                    "size": "16px",
+                    "size": "18px",
                     "name": "Normal"
                 },
                 {
@@ -43,7 +43,7 @@
                 },
                 {
                     "slug": "large",
-                    "size": "20px",
+                    "size": "18px",
                     "name": "Large"
                 },
                 {
