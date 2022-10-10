@@ -132,18 +132,20 @@ else :
 
 		<div class="post-archive__excerpt"><?php echo wp_kses_post( get_the_excerpt() ); ?></div>
 
-		<span class="post-archive__item_date">
-			<?php
-			echo get_the_date();
-			?>
-			<?php
-			// Post author.
-			if ( in_category( 'blog' ) && Lf_Utils::display_author( get_the_ID() ) ) {
-				echo ' | ' . wp_kses_post( Lf_Utils::display_author( get_the_ID() ) );
-			}
-
-			?>
-		</span>
+		<?php if (has_post_thumbnail() && in_category( 'blog' )) : ?>
+			<span class="post-archive__item_date">
+				<?php
+				echo get_the_date();
+				?>
+				<?php
+				// Post author.
+				if ( in_category( 'blog' ) && Lf_Utils::display_author( get_the_ID() ) ) {
+					echo ' | ' . wp_kses_post( Lf_Utils::display_author( get_the_ID() ) );
+				}
+	
+				?>
+			</span>
+		<?php endif; ?>
 	</div>
 
 	<?php
