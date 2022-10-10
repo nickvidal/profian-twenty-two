@@ -91,7 +91,7 @@ function watch() {
 	gulp.watch( styleWatchDetachedStyles,gulp.series( [detachedStyles] ) );
 	gulp.watch( thirdpartyJSWatchFiles,gulp.series( [reload] ) );
 	gulp.watch( editorJSWatchFiles,gulp.series( [editorJS,reload] ) );
-	gulp.watch( globalJSWatchFiles,gulp.series( [globalJS,reload] ) );
+	gulp.watch( globalJSWatchFiles,gulp.series( [globalJSStaging,reload] ) );
 
 	return browserSync.init(
 		{
@@ -291,9 +291,34 @@ function detachedStyles() {
 }
 
 /**
- * Global JS files
+ * Global JS files - Staging
  */
-function globalJS() {
+function globalJSStaging() {
+	return gulp
+		.src( [jsGlobalSrc, '!./source/js/globals/cookie-banner.js'] )
+		.pipe(include())
+		.on('error', console.log)
+		.pipe( concat( jsGlobalFile + '.js' ) )
+		.pipe( lineec() )
+		.pipe( gulp.dest( jsGlobalDestination ) )
+		.pipe(
+			rename(
+				{
+					basename: jsGlobalFile,
+					suffix: '.min'
+				}
+			)
+		)
+		.pipe( terser() )
+		.pipe( lineec() )
+		.pipe( gulp.dest( jsGlobalDestination ) )
+		.pipe( touch() );
+}
+
+/**
+ * Global JS files - Production
+ */
+function globalJSProduction() {
 	return gulp
 		.src( jsGlobalSrc )
 		.pipe(include())
@@ -340,9 +365,8 @@ function editorJS() {
 	);
 }
 
-exports.default    = gulp.series( styles,globalJS,editorJS,watch );
-exports.watch      = gulp.series( styles,globalJS,editorJS,watch );
-// exports.detached   = gulp.series( styles,detachedStyles,globalJS,editorJS,watch );
-exports.build      = gulp.series( styles,detachedStyles,globalJS,editorJS );
-exports.production = gulp.series( styles,detachedStyles,globalJS,editorJS );
-exports.prod       = gulp.series( styles,detachedStyles,globalJS,editorJS );
+exports.default    = gulp.series( styles,globalJSStaging,editorJS,watch );
+exports.watch      = gulp.series( styles,globalJSStaging,editorJS,watch );
+exports.build      = gulp.series( styles,globalJSStaging,editorJS );
+exports.production = gulp.series( styles,globalJSProduction,editorJS );
+exports.prod       = gulp.series( styles,globalJSProduction,editorJS );
