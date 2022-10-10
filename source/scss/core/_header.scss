@@ -85,6 +85,7 @@
 // applies at all responsive sizes.
 .main-menu {
 	.menu-item-has-children {
+		font-size: 16px;
 		a:hover {
 			text-decoration: none;
 			color: rgba(0, 0, 0, 0.7);
@@ -209,7 +210,7 @@
 		top: calc(60px + 1px);
 		bottom: 0;
 		z-index: 5;
-		width: 100%;
+		width: 100vw;
 		height: 100%;
 
 		overflow-y: scroll;
@@ -526,8 +527,7 @@
 // Item box used only in mega menu.
 .main-menu-item {
 	background: $white;
-	border: 1px solid $gray-400;
-	border-radius: 5px;
+	border: 1px solid $gray-300;
 	display: flex;
 	flex-direction: row;
 	font-weight: 700;

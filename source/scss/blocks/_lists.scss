@@ -75,3 +75,18 @@ article,
 		}
 	}
 }
+
+// UB Styled Lists
+// TODO: Break out into a vendor stylesheet
+
+.ub_styled_list .fa-ul {
+	gap: 1em 2em;
+    grid-template-columns: 1fr;
+}
+
+@media (min-width: 800px) {
+	.ub_styled_list .fa-ul {
+		grid-template-columns: repeat(2, 1fr);
+    	max-width: 800px;
+	}
+}
