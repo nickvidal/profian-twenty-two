@@ -300,20 +300,8 @@
 		}
 
 		// custom border colors to match design.
-		.menu-item-has-children:nth-child(1) .is-open {
-			border-bottom: 5px solid $shade-01;
-		}
-		.menu-item-has-children:nth-child(2) .is-open {
-			border-bottom: 5px solid $shade-02;
-		}
-		.menu-item-has-children:nth-child(3) .is-open {
-			border-bottom: 5px solid $shade-03;
-		}
-		.menu-item-has-children:nth-child(4) .is-open {
-			border-bottom: 5px solid $shade-04;
-		}
-		.menu-item-has-children:nth-child(5) .is-open {
-			border-bottom: 5px solid $shade-05;
+		.menu-item-has-children .is-open {
+			border-bottom: 5px solid $primary-400;
 		}
 	}
 }
@@ -423,20 +411,8 @@
 				background-color: transparent;
 			}
 		}
-		&:nth-child(1).is-open span:after {
-			background-color: $shade-01;
-		}
-		&:nth-child(2).is-open span:after {
-			background-color: $shade-02;
-		}
-		&:nth-child(3).is-open span:after {
-			background-color: $shade-03;
-		}
-		&:nth-child(4).is-open span:after {
-			background-color: $shade-04;
-		}
-		&:nth-child(5).is-open span:after {
-			background-color: $shade-05;
+		&.is-open span:after {
+			background-color: $primary-400;
 		}
 
 		// pop out menu.
