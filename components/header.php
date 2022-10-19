@@ -23,9 +23,9 @@ endif;
 
 		<div class="logo">
 			<a href="/" title="<?php echo bloginfo( 'name' ); ?>">
-				<img loading="eager" src="<?php echo esc_url( wp_get_attachment_url( "508" ) ); ?>"
-					style="height:40px;"
-					alt="<?php echo bloginfo( 'name' ); ?>">
+				<img loading="eager" src="<?php echo esc_url( wp_get_attachment_url( $site_options['header_image_id'] ) ); ?>"
+						width="210" height="40"
+						alt="<?php echo bloginfo( 'name' ); ?>">
 			</a>
 		</div>
 

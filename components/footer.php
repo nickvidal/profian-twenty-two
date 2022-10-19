@@ -72,12 +72,21 @@ $site_options = get_option( 'lf-mu' );
 
 		<div class="lf-grid">
 			<div class="span7">		
+				<?php
+				// Only on desktop.
+				if ( isset( $site_options['footer_image_id'] ) && $site_options['footer_image_id'] ) {
+					?>
 				<div class="logo show-over-1000">
 					<a href="/" title="<?php echo bloginfo( 'name' ); ?>">
-						<img src="<?php echo esc_url( wp_get_attachment_url( "1064" ) ); ?>" loading="lazy"
-						width="210" height="40" alt="<?php echo bloginfo( 'name' ); ?>">
+						<img src="<?php echo esc_url( wp_get_attachment_url( $site_options['footer_image_id'] ) ); ?>"
+							loading="lazy" width="210" height="40"
+							alt="<?php echo bloginfo( 'name' ); ?>">
 					</a>
 				</div>
+
+					<?php
+				}
+				?>
 			</div>
 			<div class="span5">		
 				<?php get_template_part( 'components/social-links' ); ?>

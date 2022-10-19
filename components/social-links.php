@@ -13,23 +13,31 @@ $site_options = get_option( 'lf-mu' );
 ?>
 
 <ul class="social-links">
+	<?php if ( isset( $site_options['social_twitter'] ) && $site_options['social_twitter'] ) : ?>
 	<li class="social-twitter"><a title="<?php echo esc_html( get_bloginfo( 'name' ) ) . ' on Twitter'; ?>"
-			href="https://twitter.com/profianinc"><?php LF_Utils::get_svg( 'social/twitter.svg' ); ?>
+			href="<?php echo esc_url( $site_options['social_twitter'] ); ?>"><?php LF_Utils::get_svg( 'social/twitter.svg' ); ?>
 		</a></li>
+	<?php endif; ?>
 
+	<?php if ( isset( $site_options['social_github'] ) && $site_options['social_github'] ) : ?>
 	<li class="social-github"><a title="<?php echo esc_html( get_bloginfo( 'name' ) ) . ' on Github'; ?>"
-			href="https://github.com/profianinc"><?php LF_Utils::get_svg( 'social/github.svg' ); ?></a></li>
+			href="<?php echo esc_url( $site_options['social_github'] ); ?>"><?php LF_Utils::get_svg( 'social/github.svg' ); ?></a></li>
+	<?php endif; ?>
 
+	<?php if ( isset( $site_options['social_linkedin'] ) && $site_options['social_linkedin'] ) : ?>
 	<li class="social-linkedin"><a title="<?php echo esc_html( get_bloginfo( 'name' ) ) . ' on LinkedIn'; ?>"
-			href="https://www.linkedin.com/company/80162086"><?php LF_Utils::get_svg( 'social/linkedin-black.svg' ); ?></a></li>
+			href="<?php echo esc_url( $site_options['social_linkedin'] ); ?>"><?php LF_Utils::get_svg( 'social/linkedin-black.svg' ); ?></a></li>
+	<?php endif; ?>
 
 	<?php if ( isset( $site_options['social_wechat'] ) && $site_options['social_wechat'] ) : ?>
 	<li class="social-wechat"><a title="<?php echo esc_html( get_bloginfo( 'name' ) ) . ' on WeChat'; ?>"
 			href="<?php echo esc_url( $site_options['social_wechat'] ); ?>"><?php LF_Utils::get_svg( 'social/wechat.svg' ); ?></a></li>
 	<?php endif; ?>
 
+	<?php if ( isset( $site_options['social_youtube'] ) && $site_options['social_youtube'] ) : ?>
 	<li class="social-youtube"><a title="<?php echo esc_html( get_bloginfo( 'name' ) ) . ' on YouTube'; ?>"
-			href="https://www.youtube.com/channel/UCaDB-O2yvNYL9jFBf_WLihA/playlists"><?php LF_Utils::get_svg( 'social/youtube.svg' ); ?></a></li>
+			href="<?php echo esc_url( $site_options['social_youtube'] ); ?>"><?php LF_Utils::get_svg( 'social/youtube.svg' ); ?></a></li>
+	<?php endif; ?>
 
 	<?php if ( isset( $site_options['social_flickr'] ) && $site_options['social_flickr'] ) : ?>
 	<li class="social-flickr"><a title="<?php echo esc_html( get_bloginfo( 'name' ) ) . ' on Flickr'; ?>"
