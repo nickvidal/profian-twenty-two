@@ -16,10 +16,6 @@
 if ( is_archive() ) :
 	?>
 
-<div class="is-style-opening-paragraph has-header-3-font-size">
-	<?php echo category_description(); ?>
-</div>
-
 <div class="columns-one">
 
 	<?php

@@ -135,7 +135,7 @@ endif;
 									}
 
 									?>
-									<a class="menu-item menu-item--small menu-item--icon" href="/resources/blog">See All Blog Posts</a>
+									<a class="menu-item menu-item--small menu-item--icon" href="/blog">See All Blog Posts</a>
 								</div>
 
 									<?php

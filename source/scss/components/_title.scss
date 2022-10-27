@@ -54,7 +54,8 @@
 
 .author-category,
 .space-slash,
-.parent-link {
+.parent-link
+.parent-link-align span {
 	font-weight: 700;
 	font-size: 9px;
 	line-height: 9px;
@@ -86,16 +87,18 @@
 }
 
 
-.parent-link-align {
+.parent-link-align{
 	display: flex;
 	flex-wrap: wrap;
 	margin-bottom: 40px;
+	gap: 5px;
 }
 
 .title-wrapper {
 	.author-category,
 	.space-slash,
-	.parent-link {
+	.parent-link, 
+	.parent-link-align span {
 		line-height: 150%;
 		font-size: 14px;
 		@media (min-width: 375px) {
