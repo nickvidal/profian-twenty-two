@@ -12,25 +12,27 @@ while ( have_posts() ) :
 	?>
 <main>
 	<article class="container wrap post-content">
+		<div class="post-content-wrapper">
 
-		<?php
-		// Post author section.
-		if ( in_category( 'blog' ) ) :
-			get_template_part( 'components/post-author' );
-		endif;
+			<?php
+			// Post author section.
+			if ( in_category( 'blog' ) ) :
+				get_template_part( 'components/post-author' );
+			endif;
 
-		the_content();
-		?>
+			the_content();
+			?>
 
-		<div style="height:80px"
-			aria-hidden="true" class="wp-block-spacer is-style-80-120">
-		</div>
-		<?php
-		get_template_part( 'components/social-share' );
-		?>
+			<div style="height:80px"
+				aria-hidden="true" class="wp-block-spacer is-style-80-120">
+			</div>
+			<?php
+			get_template_part( 'components/social-share' );
+			?>
 
-		<div style="height:80px"
-			aria-hidden="true" class="wp-block-spacer is-style-80-120">
+			<div style="height:80px"
+				aria-hidden="true" class="wp-block-spacer is-style-80-120">
+			</div>
 		</div>
 	</article>
 

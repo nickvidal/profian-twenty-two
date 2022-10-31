@@ -183,9 +183,9 @@ endif;
 							</div>
 							<div class="col3">
 								<ul id="menu-community-3" class="menu"><li class="menu-item menu-item-type-custom menu-item-object-custom lf-menu-title">Membership</li>
-								<li class="menu-item menu-item-type-custom menu-item-object-custom"><a href="https://confidentialcomputing.io"><img src="<?php echo esc_url( wp_get_attachment_url( "507" ) ); ?>" style="max-width: 300px;"></a></li>
-								<li class="menu-item menu-item-type-custom menu-item-object-custom"><a href="https://cncf.io"><img src="<?php echo esc_url( wp_get_attachment_url( "505" ) ); ?>" style="max-width: 300px; padding-bottom: 15px;"></a></li>
-								<li class="menu-item menu-item-type-custom menu-item-object-custom"><a href="https://bytecodealliance.org"><img src="<?php echo esc_url( wp_get_attachment_url( "506" ) ); ?>" style="max-width: 300px;"></a></li>
+								<li class="menu-item menu-item-type-custom menu-item-object-custom"><a href="https://confidentialcomputing.io"><img src="<?php echo esc_url( wp_get_attachment_url( "507" ) ); ?>" style="max-width: 150px;"></a></li>
+								<li class="menu-item menu-item-type-custom menu-item-object-custom"><a href="https://cncf.io"><img src="<?php echo esc_url( wp_get_attachment_url( "505" ) ); ?>" style="max-width: 150px; padding-bottom: 15px;"></a></li>
+								<li class="menu-item menu-item-type-custom menu-item-object-custom"><a href="https://bytecodealliance.org"><img src="<?php echo esc_url( wp_get_attachment_url( "506" ) ); ?>" style="max-width: 150px;"></a></li>
 								</ul>
 							</div>
 						</div>

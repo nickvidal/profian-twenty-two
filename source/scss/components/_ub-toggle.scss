@@ -8,3 +8,17 @@
 .wp-block-ub-content-toggle-accordion {
     margin-bottom: 40px;
 }
+
+.ub-number-box .ub-number-panel {
+    @media (max-width: 599px) {
+        &:last-child {
+            margin-bottom: 20px;
+        }
+    }
+    @media (max-width: 799px) {
+        margin: 0 auto;
+        &:last-child {
+            margin-top: 60px;
+        }
+    }
+}

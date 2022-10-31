@@ -86,15 +86,20 @@
 	&__item {
 		display: flex;
 		flex-direction: column;
-		.post-archive__image {
-			object-fit: cover;
-			width: 100%;
-			height: 100.1%;
-			aspect-ratio: 40/21;
+		padding: 40px 0;
+		&:not(:last-child) {
+			border-bottom: 1px solid #eaeaea;
+		}
+		&:first-child {
+			padding-top: 0;
+		}
+		&:last-child {
+			padding-bottom: 0;
 		}
 		@media (min-width: 1000px) {
 			flex-direction: row;
 			align-items: flex-start;
+			padding: 60px 0;
 			.post-archive__image-wrapper {
 				margin-right: 40px;
 				flex-basis: 325px;
@@ -121,6 +126,7 @@
 					margin-top: 35px;
 				}
 			}
+			
 		}
 		@media (min-width: 1200px) {
 			.post-archive__image-wrapper {
@@ -133,6 +139,12 @@
 					flex-basis: 690px;
 				}
 			}
+		}
+		.post-archive__image {
+			object-fit: cover;
+			width: 100%;
+			height: 100.1%;
+			aspect-ratio: 40/21;
 		}
 		&.in-the-news-item {
 			.post-archive__link {
@@ -219,11 +231,10 @@
 
 // Blog Specific
 // Todo: Move to specific scss file?
-@media (min-width: 900px) {
-	.single-blog .post-content :not(.is-style-full-width) {
-		max-width: 900px;
-	}
+body:not(.single-white-paper):not(.single-event_listing) .post-content-wrapper {
+	max-width: 900px;
 }
+
 
 // White Paper Specific
 .white-paper__cover img {
