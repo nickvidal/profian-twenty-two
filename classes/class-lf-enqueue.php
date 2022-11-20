@@ -66,7 +66,6 @@ class LF_Enqueue {
 		if ( WP_DEBUG === true ) {
 			// Use un-minified versions.
 			wp_enqueue_script( 'global-scripts', get_template_directory_uri() . '/build/globals.js', null, filemtime( get_template_directory() . '/build/globals.js' ), true );
-
 		} else {
 			wp_enqueue_script( 'global-scripts', get_template_directory_uri() . '/build/globals.min.js', null, filemtime( get_template_directory() . '/build/globals.min.js' ), true );
 		}
