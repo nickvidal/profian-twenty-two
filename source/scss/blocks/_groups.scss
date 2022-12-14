@@ -38,4 +38,8 @@
 			padding: 40px;
 		}
 	}
+	&.is-style-radial-bg {
+		background-image: url('../images/bg-radial-accent.jpg');
+		background-position: center bottom;
+	}
 }
