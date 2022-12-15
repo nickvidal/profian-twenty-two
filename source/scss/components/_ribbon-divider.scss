@@ -7,3 +7,27 @@
     background-size: cover;
     max-width: 100% !important;
 }
+
+.ribbon-divider-bg {
+    &:before {
+        background-image: url(../images/ribbon-accent-hero.svg);
+        background-repeat: no-repeat;
+        background-size: 200%;
+        background-position: 56%;
+        content: "";
+        height: 100%;
+        left: 0;
+        opacity: 0.4;
+        position: absolute;
+        top: 0;
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 960px) {
+    .ribbon-divider-bg {
+        &:before {
+            background-size: 500%;
+        }
+    }
+}
