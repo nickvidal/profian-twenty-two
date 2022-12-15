@@ -53,7 +53,7 @@ $offset: 20px;
         right: 0;
         left: $offset;
         width: calc(100% - $offset);
-        background: linear-gradient(220.31deg, #00FF0A 24.36%, #000000 91.29%);
+        background: linear-gradient(220.31deg, $primary-400 24.36%, #000000 91.29%);
         border: 1px solid #000;
         padding-bottom: calc(85% + 20px);
         box-sizing: border-box;
