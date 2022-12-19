@@ -1,0 +1,36 @@
+.section-bg {
+    position: relative;
+    overflow: hidden;
+    padding-top: 50px;
+    padding-bottom: 50px;
+
+    // remove this hack later
+    & > div {
+        position: relative;
+        z-index: 1;
+    }
+
+    @media (min-width: 1200px) {
+        padding-top: 80px;
+        padding-bottom: 80px;
+    }
+
+    &.has-light-bg {
+        background-color: $gray-250;
+
+        &:after {
+            background-image: url(../images/ribbon-accent-hero.svg);
+            background-repeat: no-repeat;
+            content: "";
+            background-size: cover;
+            width: 1000px;
+            height: 300px;
+            position: absolute;
+            right: -80px;
+            -webkit-transform: rotate(30deg);
+            transform: rotate(30deg);
+            opacity: .3;
+            top: 0;
+        }
+    }
+}

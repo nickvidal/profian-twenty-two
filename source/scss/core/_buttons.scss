@@ -49,6 +49,12 @@
 	padding-right: 40px;
 	// white-space: nowrap;
 
+	&.button-rounded {
+		border-radius: 30px;
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+
 	&:hover {
 		// &:hover:not(.has-text-color) {
 		color: $white;

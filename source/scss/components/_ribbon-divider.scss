@@ -9,6 +9,8 @@
 }
 
 .ribbon-divider-bg {
+    position: relative;
+    
     &:before {
         background-image: url(../images/ribbon-accent-hero.svg);
         background-repeat: no-repeat;

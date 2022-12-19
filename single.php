@@ -34,6 +34,9 @@ elseif ( is_singular( 'lf_report' ) ) :
 	get_template_part( 'components/title' );
 	get_template_part( 'components/report-single' );
 	// Default.
+elseif ( is_singular( 'podcast' ) ) :
+	get_template_part( 'components/title' );
+	get_template_part( 'components/podcast-single' );
 else :
 	get_template_part( 'components/title' );
 	get_template_part( 'components/post-single' );
