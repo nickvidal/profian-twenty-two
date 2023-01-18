@@ -86,14 +86,14 @@ else :
 		<a class="post-archive__link" href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>">
 
 			<?php
-
+			
 			if ( has_post_thumbnail() && $is_featured ) {
 				// display large featured image.
 				Lf_Utils::display_responsive_images( get_post_thumbnail_id(), 'newsroom-776', '776px', 'post-archive__image', 'lazy', get_the_title() );
 
-			} elseif (has_post_thumbnail() && in_category( 'white-papers' )) {
+			} elseif (has_post_thumbnail() && get_post_type() === 'white-paper') {
 				the_post_thumbnail('medium', array('class' => 'post-archive__image-wp'));
-			} elseif ( has_post_thumbnail() && !in_category( 'white-papers' )) {
+			} elseif ( has_post_thumbnail() && !(get_post_type() === 'white-paper') ) {
 				// display smaller news image.
 				Lf_Utils::display_responsive_images( get_post_thumbnail_id(), 'newsroom-388', '388px', 'post-archive__image', 'lazy', get_the_title() );
 
